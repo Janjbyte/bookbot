@@ -4,7 +4,6 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     print(f"I've found {num_words} words in the book")
-    print(text)
 
 # Skapar funktion för att räkna    
 def get_num_words(text):
