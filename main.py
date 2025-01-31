@@ -3,9 +3,12 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     lower_case = characters(text)
+    print(f"A total of {get_num_words(text)} words counted in {book_path}")
+    print()
     alph = alphabet(lower_case)
-    print(alph)
 
+    for alp in alph:
+        print(f"{alp} is counted {alph[alp]} times in the book") 
 
 # Funktionen tar bara alfabetet    
 def alphabet(lower_case):
